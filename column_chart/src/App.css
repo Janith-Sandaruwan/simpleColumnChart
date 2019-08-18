@@ -1,0 +1,76 @@
+p{
+  color: rgba(202, 223, 223,0.8);
+}
+.chartContainer{
+  background-color: rgb(17, 11, 32);
+  height: 200px;
+  width: 250px;
+  display: flex;
+  margin: auto;
+}
+
+.barContainers{
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  height: 95%;
+  margin-top: 4%;
+}
+
+.chartContainer >div{
+  flex: 1;
+  position: relative;  
+}
+.first{
+  background-image: linear-gradient(rgb(255, 145, 0), rgb(226, 196, 27));
+  width: 60%;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  animation: draw 1.5s ease-in-out;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.second{
+  background-image: linear-gradient(rgb(7, 128, 7), rgb(21, 231, 14));
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  animation: draw 1.5s ease-in-out;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.third{
+  background-image: linear-gradient(rgb(143, 18, 9), rgb(255, 35, 35));
+  width: 60%;
+  height: 10%; 
+  position: absolute;
+  bottom: 0;
+  animation: draw 1.5s ease-in-out;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.text p{
+  transform: rotate(270deg);
+  position: relative;
+  bottom:0px;
+  margin: 100% auto;
+  animation: 3s shade ;
+}
+
+@keyframes draw{
+  0%{height:0;} 
+}
+
+@keyframes shade {
+  from {color: rgba(222, 222, 252, 0)}
+  to {color: rgba(202, 223, 223,1)}
+}
